@@ -1,0 +1,52 @@
+.my-main-container {
+    border-radius: 5px;
+    background-color:#f0f8ff;
+    padding: 20px;
+    display: flex;
+  }
+
+.my-left-container {
+    flex: 0 1 50%;
+    min-height: 100%;
+    max-width: 40%;
+    padding: .5em;
+    display: inline-block;
+}
+.my-right-container {
+    flex: 0 1 0%;
+    height: 100%;
+    max-width: 50%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    display: inline-block;
+}
+
+.my-input {
+    width:auto; /* Full width */
+    padding: 12px; /* Some padding */ 
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+  
+  .my-button {
+    padding: 50px; /* Some padding */
+    display: block;
+    justify-content: end;
+  }
+  
+.my-label { 
+    padding-right: 10px;
+    display: block;
+}
+
+.my-text-area {
+    width: auto;
+    max-width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-input, .my-button, .my-label, .my-left-container, .my-main-container, .my-right-container, .my-text-area {
+    display: block;
+  }
+}
